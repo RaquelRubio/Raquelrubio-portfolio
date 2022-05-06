@@ -1,0 +1,563 @@
+@font-face {
+    font-family: "futura";
+    src: url("../fonts/Futura\ Book\ font.ttf");
+}
+
+@font-face {
+    font-family: "futuraBold";
+    src: url("../fonts/Futura\ Heavy\ font.ttf");
+}
+
+@font-face {
+    font-family: "futuraLight";
+    src: url("../fonts/futura\ light\ bt.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 95%;
+}
+
+.menu {
+    color: #DD723A;
+    display: flex;
+    padding: 10px;
+    gap: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: large;
+    color: black;
+    padding: 40px;
+}
+
+body {
+    color: black;
+    font-family: futura;
+}
+
+h1 {
+    color: #DD723A;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-bottom: 12px;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+}
+
+h4 {
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 12px;
+    font-family: futuraBold;
+}
+
+h5 {
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.lines {
+    background-color: #F1CA63;
+    height: 3px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-container {
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.project-img {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.project-text {
+    width: 50%;
+    padding: 70px;
+    line-height: 20px;
+}
+
+.imgproject3 {
+    width: 20%;
+    padding: 2%;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.inicio img {
+    width: 90%;
+}
+
+.ImRaquel {
+    width: 38%;
+    line-height: 25px;
+    height: 100px;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: futuraBold;
+}
+
+.project-container2 {
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+
+.footer {
+    justify-content: flex-end;
+    display: flex;
+    height: 80px;
+    background-color: #DD723A;
+    padding: 20px;
+}
+
+.iconsfooter {
+    padding: 20px;
+    display: flex;
+    height: 30px;
+    gap: 6px;
+}
+
+.iconsfooter img{
+width: 75%;
+}
+
+h6 {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    font-family: futuraBold;
+}
+
+.lettering {
+    text-align: center;
+}
+
+.lettering-img {
+    width: 60%;
+    align-items: center;
+    padding: 7%;
+}
+
+.bio {
+    line-height: 25px;
+    font-family: futuraLight;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+}
+
+.foto {
+    padding-top: 6%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.foto img {
+    width: 70%;
+}
+
+.banda {
+    justify-content: flex-start;
+}
+
+.banda img {
+    margin-left: 30%;
+    width: 75%;
+}
+
+.inicio>.ImRaquel>h1 {
+    color: transparent;
+    font-size: 60px;
+}
+
+.inicio>.ImRaquel>h1:before {
+    content: "Hello!";
+    position: absolute;
+    overflow: auto;
+    border-right: 4px solid #DD723A;
+    color: #DD723A;
+    animation: load91371 2s linear infinite;
+    height: 20%;
+    padding-top: 20px;
+}
+
+@keyframes load91371 {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+        border-right-color: transparent;
+    }
+
+    11%,
+    21%,
+    31%,
+    41%,
+    51%,
+    61%,
+    71%,
+    81%,
+    91% {
+        border-right-color: #DD723A;
+    }
+
+    60%,
+    80% {
+        width: 30%;
+    }
+}
+
+.project-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1CA63;
+    padding: 0 32px;
+    width: 120px;
+    height: 42px;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 16px;
+    margin: 6% 0;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 844px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 10px;
+
+    }
+
+    h1 {
+        color: #DD723A;
+        font-weight: bolder;
+        font-size: 20px;
+        padding-bottom: 18px;
+    }
+
+    h2 {
+        font-size: 15px;
+        color: black;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    h3 {
+        color: black;
+        font-size: 14px;
+        width: 180%;
+        padding: 0 25px;
+        line-height: 18px;
+    }
+
+    h6{
+        color: white;
+        font-size: 19px;
+        padding: 5px;
+        font-family: futuraBold;
+        align-items: flex-end;
+        padding-left: 20px;
+    }
+
+    .p {
+        color: black;
+        font-size: 14px;
+        width: 140%;
+        padding: 0 25px;
+        line-height: 18px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .inicio {
+        display: flex;
+        width: 60%;
+        padding: 5% 5%;
+        padding-bottom: 12%;
+        gap: 3px;
+    }
+
+    .inicio img {
+        width: 110%;
+    }
+
+    .inicio>.ImRaquel>h1 {
+        color: transparent;
+        font-size: 30px;
+    }
+
+    .inicio>.ImRaquel>h1:before {
+        content: "Hello!";
+        position: absolute;
+        overflow: auto;
+        border-right: 4px solid #DD723A;
+        color: #DD723A;
+        animation: load91371 2s linear infinite;
+        height: 40px;
+        padding-top: 0px;
+    }
+
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        text-align: center;
+        align-items: center;
+        padding: 34px 5px;
+    }
+
+    .project-button {
+        width: 75%;
+    }
+
+    .project-img {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .project-text {
+        width: 75%;
+        padding: 10px;
+        line-height: 20px;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .imagenesmovil {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 7px;
+    }
+
+    .project-container2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 85%;
+            text-align: center;
+            align-items: center;
+            padding: 24px;
+    }
+
+    .project-container2 img{
+        width: 50%;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        text-align: center;
+        align-items: center;
+        padding: 7px;
+    }
+
+    .project-container3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        text-align: center;
+        align-items: center;
+        padding: 7px;
+        padding-bottom: 12%;
+    }
+
+    .collages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 7px;
+    }
+
+    .imgproject3 {
+        width: 35%;
+    }
+
+    .footer {
+        height: 24px;
+        justify-content: space-between;
+        width: auto;
+        align-items: flex-end;
+        justify-items: center;
+    }
+
+    .iconsfooter{
+        padding: 3px;
+        padding-right: 20px;
+        display: flex;
+        height: 90%;
+        gap: 9px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .iconsfooter img {
+        height: 90%;
+    }
+
+    .lines{
+      width: 80%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .foto{
+        width: 300px;
+    }
+
+    .bio{
+        color: black;
+        font-size: 12px;
+        justify-content: center;
+        width: 80%;
+        padding: 0 25px;
+        line-height: 18px;
+        margin: auto;
+    }
+
+    .banda{
+        margin-left: 6px;
+        width: 90%;
+    }
+
+    .banda img {
+        margin-left: 5px;
+        width: 230px;
+    }
+
+    .lettering{
+        padding-bottom: 20px;
+        gap: 2px;
+    }
+
+
+    @keyframes load91371 {
+
+        0%,
+        10%,
+        100% {
+            width: 0;
+        }
+
+        10%,
+        20%,
+        30%,
+        40%,
+        50%,
+        60%,
+        70%,
+        80%,
+        90%,
+        100% {
+            border-right-color: transparent;
+        }
+
+        11%,
+        21%,
+        31%,
+        41%,
+        51%,
+        61%,
+        71%,
+        81%,
+        91% {
+            border-right-color: #DD723A;
+        }
+
+        60%,
+        80% {
+            width: 30%;
+        }
+    }
+
+}
